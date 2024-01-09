@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const client = new ApolloClient({
     uri: 'http://localhost:4000/',
