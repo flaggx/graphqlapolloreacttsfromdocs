@@ -8,8 +8,9 @@ const typeDefs = `#graphql
 
 # This "Book" type defines the queryable fields for every book in our data source.
 type Book {
-    title: String
-    author: String
+    id: String!
+    title: String!
+    author: String!
 }
 
 # The "Query" type is special: it lists all of the available queries that
@@ -22,10 +23,12 @@ type Query {
 // books is hardcoded data. This will need to be replaced with real data.
 const books = [
     {
+        id: '01',
         title: 'The Awakening',
         author: 'Kate Chopin',
     },
     {
+        id: '02',
         title: 'City of Glass',
         author: 'Paul Auster',
     },
